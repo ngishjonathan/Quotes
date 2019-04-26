@@ -2,9 +2,11 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `
+    <h1> My Quotes </h1>
+    <p> my quote is {{Quote}} </p>
+  `
 })
 export class AppComponent {
-  title = 'Quotes';
+  Quote = 'Never giveup in life';
 }
