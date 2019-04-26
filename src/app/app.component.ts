@@ -5,5 +5,11 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-  Quote = 'never give up in life';
+   Quotes: string[];
+
+  constructor(){
+
+    this.Quotes = ["Never give up in this life","Always keep calm it doesn't hurt",
+    "whatever is started must be finished"];
+  }
 }
