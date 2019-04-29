@@ -7,6 +7,7 @@ import {Quote} from '../quote'
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
+
   quotes = [
     new Quote(1,'Never give up in this life','its not good to give up'),
     new Quote(2,'Remain calm it does not hurt','always be calm'),
@@ -15,13 +16,19 @@ export class QuoteComponent implements OnInit {
     new Quote(5, 'character makes a man','be a person of character'),
     new Quote(6, 'work hard today to avoid hardwork tommorrow','always be hardworking'),
 
-  ]
+]
 
-  toogleDetails(index){
-      this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  completeQuote(isComplete,index){
+      if (isComplete){
+          this.quotes.splice(index,1);
+          }
+         }
+
+  ngOnInit() {
   }
 
-constructor() { }
-ngOnInit() {
 }
-}
+
+
+
+
