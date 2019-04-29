@@ -23,21 +23,13 @@ export class QuoteComponent implements OnInit {
           this.quotes.splice(index,1);
           }
          }
-
-         addNewGoal(quote){
-          let goalLength = this.quotes.length;
-          quote.id=goalLength+1;
-          quote.completeDate = new Date(quote.completeDate)
-          this.quotes.push (quote)
-  
+         addNewquote(quote){
+          let quoteLength = this.quotes.length;
+          quote.id=quoteLength+1;
+          this.quotes.push(quote)
+         }
+         ngOnInit() {
+        }
       }
-
-      ngOnInit() {
-      }
-  }
-
-
-
-
-
-
+      
+        
