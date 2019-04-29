@@ -1,10 +1,6 @@
 <h1>Quotes of the day</h1>
-<ul>
-    <div *ngFor='let quote of quotes;let i = index'>
-        <li >{{quote.name}}</li>
-        <button  (click)='toogleDetails(i)'>Toogle Details</button>
-
-        <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'completeQuote($event,i)'></app-quote-details>
+<div class="container">
+    <div class="row">
+        <app-quote-form></app-quote-form>
     </div>
-  
-</ul>
+</div>
