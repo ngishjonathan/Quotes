@@ -8,6 +8,9 @@
     <div *ngFor='let quote of quotes; let i = index'>
         <ul>
     <li>{{quote.name}}</li>
+    <button (click)='toogleDetails(i)' class="btn">Toogle</button>
+    <app-vote *ngIf="quote.showDescription" [quote]='quote'></app-vote>
+    
 </ul>
 </div>
 </div>
