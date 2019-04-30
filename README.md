@@ -22,6 +22,13 @@ git push origin branchname
 Create a pull request, and wait for Pull Request to get merged.
 ## Contributors
 1.Andrew mwangi
+
+## Technologies used
+1.Angular
+2.css
+3.html
+4.java script
+
 # Angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
