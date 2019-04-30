@@ -1,5 +1,7 @@
 ## Quotes
 Repository containing various  quotes
+## name
+Andrew mwangi
 
 ## How to Contribute to this repository
 Star this repository using 'Star' button on the top.
